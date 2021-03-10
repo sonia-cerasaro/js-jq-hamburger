@@ -1,13 +1,11 @@
 var hamburger = $(".fas.fa-bars");
-var cross = $(".close");
-
+var cross = $(".fas.fa-times");
+var ulBurger = $(".hamburger-menu");
 
 hamburger.click(function() {
-  var ulBurger = $(".hamburger-menu");
-
-  ulBurger.toggleClass("active");
+  ulBurger.addClass("active");
 });
 
 cross.click(function() {
-  ulBulger.close();
-})
+  ulBurger.removeClass("active");
+});
